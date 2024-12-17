@@ -1,32 +1,51 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>@Gyani_Bro</title>
-<style>
-    body, html {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        overflow: hidden;
+  <meta charset="UTF-8">
+  <title>@WatchAddaLive</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="//content.jwplatform.com/libraries/SAHhwvZq.js"></script>
+  <style>
+    body {
+      margin: 0px
     }
-    iframe {
-        width: 100%;
-        height: 100%;
-        border: 0;
+
+    .jwplayer {
+      position: absolute !important
     }
-</style>
+
+    .jwplayer.jw-flag-aspect-mode {
+      min-height: 100%;
+      max-height: 100%
+    }
+  </style>
 </head>
+
 <body>
-<script>
- if (confirm("Join For More Links!!")) {
-    window.location.href = "https://telegram.me/Gyani_Bro";}
-</script>
+  <div id="jwplayerDiv"></div>
+  <script type="text/javascript">
+    jwplayer("jwplayerDiv").setup({
+      file: "https://cors-anywhere.ammoapps.com/https://dfwlive-v1-c1p3-sponsored.akamaized.net/Content/HLS.cps/Live/channel(WILLHD-3291.dfw.1080)/06.m3u8", position: 'bottom',
+      "autostart": true,
+      "stretching": "",
+      "width": "100%",
+      type: "dash",
+      drm: {
+        "clearkey": {
+          "keyId": "59ed8dc9d4a48857ef8e5865919496cc",
+          "key": "0d3680bd8b349deda8b7fdd1da71b7f8"
+        }
+      }
+    });  
+            // Display a pop-up message when the page starts
+    window.addEventListener("load", function() {
+      var result = window.confirm("Join @WatchAddaLive  for more updates?");
+      if (result) {
+        window.location.href = "https://t.me/WatchAddaLive";
+      }
+    });
+  </script>
 
-<iframe src="https://gyanibrocricketchannel.github.io/mpdplayer?Watch=https://amg01269-amg01269c1-yupptv-us-5319.playouts.now.amagi.tv/playlist/amg01269-willowtvfast-willowplus-yupptvus/playlist.m3u8 "
- allowfullscreen></iframe>
-
-</body>
-</html>
